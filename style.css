@@ -434,15 +434,7 @@ footer{
     gap: 0;
   }
 
-  #email{
-    min-width: 33%;
-    grid-column: 2;
-    grid-row: 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-  }
+  
   .sendbtn{
     min-width: 5em;
     padding: 0;
@@ -630,25 +622,14 @@ footer{
     
   } */
   .footer-container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    padding: 10%;
+
   }
 
   .footer-container p{
     grid-row: 1 / 1 ;
     grid-column: 2;
     align-self: center;
-  }
-
-  .footer-container h3{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    padding: 0;
-    margin: 10% 0 0 0;
-    grid-row: 2 ;
-    grid-column: 2;
   }
 
   .placeholder{
@@ -662,6 +643,62 @@ footer{
     grid-column: span 3;
     grid-row: 3;
     grid-auto-flow: dense;
+  }
+
+  .text-envelope{
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    
+  }
+
+  .text-envelope h3{
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    
+  }
+
+  .mailform {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+
+  #email{
+    width: 60rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute; */
+  }
+
+  #text{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    background-color: rgb(24, 24, 24);
+    border: none;
+    border-radius: 1rem;
+    min-height: 15rem;
+    min-width: 15rem;
+    color: var(--white);
+    transition: all 1s ease;
+  }
+
+  #text:hover {
+    background-color: var(--darkGreen);
+    color: var(--dark);
+    transition: all 1s ease;
+  }
+
+  .fa-envelope{
+    display: flex;
+    flex-direction: column;;
+    justify-content: center;
   }
 
   

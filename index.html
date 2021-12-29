@@ -10,7 +10,7 @@
     </head>
     <body>
         <!--header-->
-        <header class="header sticky">
+        <header class="header sticky" id="header">
             <div class="container-nav-section">
                 <div class="brand-and-navBtn" id="navbar">
                     <span class="brand-name">
@@ -19,9 +19,9 @@
                         <!--navigation menu-->
                 <nav class="top-nav">
                     <ul class="main-nav" id="menu">
-                        <li><a href="index.html" class="active">Home</a></li>
-                        <li><a href="#container2" class="active">Gallery</a></li>
+                        <li><a href="#header" class="active">Home</a></li>
                         <li><a href="#section-one" class="active">About</a></li>
+                        <li><a href="#container2" class="active">Gallery</a></li>
                         <li><a href="#contact" class="active">Contact</a></li>
                     </ul>
                 </nav>
@@ -151,20 +151,26 @@
         <!--footer-->
         <footer class="footer" id="contact">
             <div class="footer-container container">
-                <div class="placeholder">
+                <!-- <div class="placeholder">
                     <h2>PLACEHOLDER</h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                     Voluptatem libero suscipit corporis quisquam laborum voluptate. 
                     Soluta velit beatae quidem incidunt illum, nihil quae voluptas culpa. Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                     Voluptatem libero suscipit corporis quisquam laborum voluptate. 
                    Soluta velit beatae quidem incidunt illum, nihil quae voluptas culpa.</p>
-                </div>
-                <h3>Hire Us!</h3>
+                </div> -->
+                
 
                 <div class="form">
-                    <i class="fas fa-envelope"></i>
-                    <input type="email" id="email" placeholder="Email Address">
-                    <button type="submit" class="sendbtn">SEND</button>
+                    
+                    <form action="https://formsubmit.co/agzawodowy@gmail.com" method="POST" class="mailform">
+                        <div class="text-envelope"><i class="fas fa-envelope"></i>
+                             <h3>Hire Us!</h3>
+                        </div>
+                        <input type="text" name="text" id="text" placeholder="Text">
+                        <input type="email" name="email" id="email" placeholder="Email Address">
+                        <button type="submit" class="sendbtn">SEND</button>
+                    </form>
                 </div>
             </div>
         </footer>
