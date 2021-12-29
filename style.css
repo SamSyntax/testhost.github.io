@@ -547,11 +547,11 @@ footer{
     transition: all 1s ease;
   }
 
-  .workimg1{
+  /* .workimg1{
     display: flex;
     justify-content: right;
     align-items: right;
-  }
+  } */
 
   /* footer{
     display: flex;
