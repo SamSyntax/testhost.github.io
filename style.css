@@ -395,28 +395,30 @@ footer{
     min-width: 100%;
     grid-auto-flow: dense;
     inset-block-end: 10em;
+    padding-left: 10%;
 
   }
   .container h3{
     display: flex;
     text-align: left;
     grid-column: span 2;
-    margin-left: 20%;
+    justify-content: left;
+
 
   }
 
   .first-text{
     grid-column: span 2;
     width: 60%;
-    justify-self: center;
+    justify-self: left;
   }
 
   .btn{
     display: grid;
     grid-column: 1 / 2;
     max-width: 5rem;
-    justify-self: center;
-    margin-right: 4%;
+    justify-self: left;
+    margin-right: 0;
   }
 
   .workimg1 {
@@ -480,7 +482,11 @@ footer{
   }
 
   .container-about{
-    min-height: 60rem;
+    height:clamp(60rem, 2.5vw, 70rem);
+  }
+
+  .brand-name a{
+    color: var(--white);
   }
 
   .header{
@@ -541,6 +547,7 @@ footer{
     justify-self: center;
     width: 100%;
     grid-auto-flow: dense;
+    padding-left: 10%;
   }
 
   .work-content h3{
@@ -553,7 +560,7 @@ footer{
 
   .workimg2{
     display: flex;
-    justify-self: center;
+    justify-self: left;
     grid-column: span 2;
     grid-row: 1 / 5;
     min-width: 60%;
