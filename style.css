@@ -385,7 +385,7 @@ footer{
   }
   .container{
     display: grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 70% 25%;
     /* grid-template-rows: repeat(6, 1fr); */ /*Optional*/
     justify-content: center;
 
@@ -393,18 +393,22 @@ footer{
 
   .first-text{
     grid-column: 1 / 2;
+    width: 60%;
   }
 
   .btn{
+    display: grid;
     grid-column: 1 / 2;
+    max-width: 5rem;
   }
 
   .workimg1 {
-    min-width: 25em;
-    grid-column:  3 / 2;
+    min-width: 95%;
+    grid-column:  2 / 2;
     grid-row-start: 1;
     grid-row-end: 5;
     display: grid;
+    margin-left: 1rem;
   }
 
   #email{
@@ -461,13 +465,14 @@ footer{
   }
 
   .container-about{
-    min-height: 55em;
+    min-height: 59rem;
   }
 
   .header{
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.9), rgb(0, 0, 0))
     , url(assets/bgimg.jpg);
     background-size: cover;
@@ -512,11 +517,6 @@ footer{
     height: 9%;
   }
 
-  
-
-  .btn{
-    width: 5%;
-  }
 
   .icon-overlay{
     max-width: 24rem;
